@@ -1,0 +1,27 @@
+package ui;
+
+import model.Model;
+
+/*
+ * Class represents a ship.
+ */
+public class Ship {
+
+   public String [] locations;
+   public String [] hits;
+
+    /*
+     * Constructs a ship.
+     * Initializes ship with empty locations and empty hits.
+     */
+    public Ship() {
+
+        locations = new String[Model.shipLength];
+        hits = new String[Model.shipLength];
+
+        for (int i = 0; i < Model.shipLength; i++) {
+            locations[i] = "";
+            hits[i] = "";
+        }
+    }
+}
